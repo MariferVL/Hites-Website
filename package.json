@@ -4,6 +4,7 @@
   "description": "Hites.com is a departmental store website that offers a wide range of products and the best deals, all in one place.",
   "main": "index.js",
   "scripts": {
+    "start": "http-server -p 3000",
     "test": "jest -coverage"
   },
   "repository": {
