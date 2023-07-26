@@ -1,0 +1,31 @@
+{
+  "name": "hiteswebsite",
+  "version": "1.0.0",
+  "description": "Hites.com is a departmental store website that offers a wide range of products and the best deals, all in one place.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariferVL/Hites-Website.git"
+  },
+  "keywords": [
+    "website",
+    "html5",
+    "css3",
+    "bootstrap",
+    "store",
+    "mobile",
+    "responsive"
+  ],
+  "author": "María-Fernanda Villalobos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariferVL/Hites-Website/issues"
+  },
+  "homepage": "https://github.com/MariferVL/Hites-Website#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
