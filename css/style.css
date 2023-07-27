@@ -75,10 +75,12 @@ a.active {
     color: white;
 }
 
-.navbar .nav-link:visited, .outlet{
+.navbar .nav-link:visited,
+.outlet {
     color: #ffa423 !important;
-    background-color: white !important ;
+    background-color: white !important;
 }
+
 .dropdown-item {
     color: #065CA3;
     font-weight: bolder;
@@ -90,14 +92,174 @@ a.active {
 }
 
 .form-control::placeholder {
-    color:#d6891e69;
-  }
+    color: #d6891e69;
+}
 
-/* Carousel */
+/* Carousel Section */
+
+#carousel {
+    margin: 8rem 3rem 3rem;
+}
 
 .carousel-img {
     width: auto;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+/* Products Section */
+
+.products {
+        padding: 80px 0 54px;
+    }
+    
+    .products .header {
+        margin-bottom: 50px;
+    }
+    
+    .products .header h3 {
+        font-size: 1rem;
+        color: #fe302f;
+        font-weight: 500;
+    }
+    
+    .products .header h2 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: #444444; 
+    }
+    
+    .products .single-product {
+        margin-bottom: 26px;
+    }
+    
+    .products .single-product .part-1 {
+        position: relative;
+        height: 290px;
+        max-height: 290px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    .products .single-product .part-1::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: all 0.3s;
+    }
+    
+    .products .single-product:hover .part-1::before {
+            transform: scale(1.2,1.2) rotate(5deg);
+    }
+    
+    .products #product-1 .part-1::before {
+        background: url("https://www.hites.com/dw/image/v2/BDPN_PRD/on/demandware.static/-/Sites-mastercatalog_HITES/default/dwb2c22564/images/original/pim/901379006/901379006_1.jpg?sw=1000&sh=1000") no-repeat center;
+        background-size: cover;
+            transition: all 0.3s;
+    }
+    
+    .products #product-2 .part-1::before {
+        background: url("https://www.hites.com/dw/image/v2/BDPN_PRD/on/demandware.static/-/Sites-mastercatalog_HITES/default/dw60cc3f7b/images/original/pim/900872002/900872002_1.jpg?sw=1000&sh=1000") no-repeat center;
+        background-size: cover;
+    }
+    
+    .products #product-3 .part-1::before {
+        background: url("https://www.hites.com/dw/image/v2/BDPN_PRD/on/demandware.static/-/Sites-mastercatalog_HITES/default/dwf3049f33/images/original/pim/900575002/900575002_1.jpg?sw=1000&sh=1000") no-repeat center;
+        background-size: cover;
+    }
+    
+    .products #product-4 .part-1::before {
+        background: url("https://www.hites.com/dw/image/v2/BDPN_PRD/on/demandware.static/-/Sites-mastercatalog_HITES/default/dw63ca96d4/images/original/pim/900568002/900568002_1.jpg?sw=1000&sh=1000") no-repeat center;
+        background-size: cover;
+    }
+    
+    .products .single-product .part-1 .discount,
+    .products .single-product .part-1 .new {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        color: #ffffff;
+        background-color: #fe302f;
+        padding: 2px 8px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+    }
+    
+    .products .single-product .part-1 .new {
+        left: 0;
+        background-color: #444444;
+    }
+    
+    .products .single-product .part-1 ul {
+        position: absolute;
+        bottom: -41px;
+        left: 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        opacity: 0;
+        transition: bottom 0.5s, opacity 0.5s;
+    }
+    
+    .products .single-product:hover .part-1 ul {
+        bottom: 30px;
+        opacity: 1;
+    }
+    
+    .products .single-product .part-1 ul li {
+        display: inline-block;
+        margin-right: 4px;
+    }
+    
+    .products .single-product .part-1 ul li a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #ffffff;
+        color: #444444;
+        text-align: center;
+        box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+        transition: color 0.2s;
+    }
+    
+    .products .single-product .part-1 ul li a:hover {
+        color: #fe302f;
+    }
+    
+    .products .single-product .part-2 .product-title {
+        font-size: 1rem;
+    }
+    
+    .products .single-product .part-2 h4 {
+        display: inline-block;
+        font-size: 1rem;
+    }
+    
+    .products .single-product .part-2 .product-old-price {
+        position: relative;
+        padding: 0 7px;
+        margin-right: 2px;
+        opacity: 0.6;
+    }
+    
+    .products .single-product .part-2 .product-old-price::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #444444;
+        transform: translateY(-50%);
+    } 
 
 /* Footer */
 
@@ -167,25 +329,94 @@ a.active {
 }
 
 footer {
-    /* background-color: #333; */
     color: #fff;
-    padding: 0.625rem;
 }
 
 
 
-/* For larger screens (desktop) */
+/* Desktop Media Queries  */
 @media (min-width: 992px) {
+
+    .navbar-nav {
+        margin-right: 3rem;
+        position: relative;
+        right: 36rem;
+    }
+
+    .nav-link.user {
+        display: none;
+      }
+
     .navbar .container-fluid {
         padding-right: 2rem;
         padding-left: 2rem;
+        color: #fff !important;
     }
 
     .navbar-collapse {
         justify-content: flex-end;
     }
 
-    .icons-mobile {
+    .nav-link.active {
         display: none;
     }
+
+    .navbar .nav-link:visited {
+        color: #ffffff !important;
+        font-weight: bolder;
+    }
+
+    .icons-mobile {
+        position: relative;
+        left: 38rem;
+    }
+
+
+    /* Tablet Media Queries */
+@media screen and (min-width: 768px) {
+    .products .header h3 {
+        font-size: 1.4rem;
+    }
+    
+    .products .header h2 {
+        font-size: 1.8rem;
+    }
+
+    .products .single-product .part-1 {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+
+    .products .single-product .part-1 .discount,
+    .products .single-product .part-1 .new {
+        top: 15px;
+        left: 15px;
+        font-size: 1rem;
+    }
+
+    .products .single-product .part-1 ul {
+        bottom: -41px;
+        left: 15px;
+    }
+
+    .products .single-product .part-1 ul li a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .products .single-product .part-2 .product-title {
+        font-size: 1.2rem;
+    }
+
+    .products .single-product .part-2 h4 {
+        font-size: 1.2rem;
+    }
+
+    .products .single-product .part-2 .product-old-price {
+        padding: 0 6px;
+    }
+}
+
+
 }
