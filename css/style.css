@@ -2,11 +2,19 @@ body {
     font-size: 1rem;
     font-family: Lato, sans-serif;
     line-height: 1.6;
-
-
 }
 
+
 /* Header */
+
+.banner-sm {
+    display: inline-block;
+    width: 100%;
+}
+
+.banner-xl {
+    display: none;
+}
 
 #logo {
     width: 6.75rem;
@@ -103,7 +111,7 @@ a.active {
 
 .d-block.a {
     position: relative;
-    right: 31.5rem;
+    right: 31.8rem;
     width: 63rem !important;
 }
 
@@ -111,7 +119,7 @@ a.active {
     position: relative;
     right: 15rem;
     width: 51rem !important;
-  }
+}
 
 
 .d-block.c {
@@ -125,6 +133,19 @@ a.active {
     width: auto;
 }
 
+
+.action-btn {
+    position: relative;
+    bottom: 8.3rem;
+    left: 5.5rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #065CA3;
+    background-color: #ffa423b8;
+
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none;
@@ -133,7 +154,12 @@ a.active {
 /* Products Section */
 
 .products {
-    padding: 80px 0 54px;
+    padding-bottom: 3rem;
+}
+
+.section-title {
+    font-weight: bolder;
+    color: #065CA3;
 }
 
 .products .header {
@@ -296,14 +322,18 @@ a.active {
     padding: 0;
     margin: 0 auto;
     list-style: none;
+    align-items: center;
+    text-align: center;
+
+
 }
 
 .access ul li {
-    float: right;
-    font-size: 0.77rem;
+    float: none;
+    font-size: 1.1rem;
     color: #f4f4f4;
     text-align: center;
-    border-right: 1px solid #e0e0e0;
+    /* border-right: 1px solid #e0e0e0; */
     padding: 0.25rem 0.8125rem;
     display: flex;
     align-items: center;
@@ -316,7 +346,7 @@ a.active {
 }
 
 .access ul li:last-child {
-    padding: 0.25rem 0.8125rem 0.25rem 0;
+    padding: 0.25rem 0.88rem 0;
 }
 
 .access ul li a {
@@ -357,6 +387,16 @@ footer {
 /* Desktop Media Queries  */
 @media (min-width: 992px) {
 
+    .banner-sm {
+        display: none;
+    }
+
+    .banner-xl {
+        display: inline-block;
+        width: 110%;
+        padding-right: 4rem;
+    }
+
     .navbar-nav {
         margin-right: 3rem;
         position: relative;
@@ -395,52 +435,94 @@ footer {
         margin: 8rem 3rem 3rem;
     }
 
+    .d-block.a,
+    .d-block.b,
+    .d-block.c {
+        position: unset;
+        width: 100% !important;
 
-    /* Tablet Media Queries */
-    @media screen and (min-width: 768px) {
-        .products .header h3 {
-            font-size: 1.4rem;
-        }
+    }
 
-        .products .header h2 {
-            font-size: 1.8rem;
-        }
+    .action-btn.a {
+        bottom: 9.3rem;
+        left: 45.5rem;
+    }
 
-        .products .single-product .part-1 {
-            height: 250px;
-            margin-bottom: 15px;
-        }
+    .action-btn.b {
+        left: 31.5rem;
+    }
 
-        .products .single-product .part-1 .discount,
-        .products .single-product .part-1 .new {
-            top: 15px;
-            left: 15px;
-            font-size: 1rem;
-        }
-
-        .products .single-product .part-1 ul {
-            bottom: -41px;
-            left: 15px;
-        }
-
-        .products .single-product .part-1 ul li a {
-            width: 35px;
-            height: 35px;
-            line-height: 35px;
-        }
-
-        .products .single-product .part-2 .product-title {
-            font-size: 1.2rem;
-        }
-
-        .products .single-product .part-2 h4 {
-            font-size: 1.2rem;
-        }
-
-        .products .single-product .part-2 .product-old-price {
-            padding: 0 6px;
-        }
+    .action-btn.c {
+        bottom: 13.3rem;
+        left: 18.5rem;
     }
 
 
+    .products {
+        padding: 80px 0 54px;
+    }
+
+
+    .access ul li {
+        float: right;
+        font-size: 0.96rem;        
+        color: #f4f4f4;
+        text-align: center;
+        border-right: 1px solid #e0e0e0;
+        padding: 0.25rem 0.8125rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .access ul li:last-child {
+        padding: 0.25rem 0.8125rem 0.25rem 0;
+    }
+
+}
+
+
+/* Tablet Media Queries */
+@media screen and (min-width: 768px) {
+    .products .header h3 {
+        font-size: 1.4rem;
+    }
+
+    .products .header h2 {
+        font-size: 1.8rem;
+    }
+
+    .products .single-product .part-1 {
+        height: 250px;
+        margin-bottom: 15px;
+    }
+
+    .products .single-product .part-1 .discount,
+    .products .single-product .part-1 .new {
+        top: 15px;
+        left: 15px;
+        font-size: 1rem;
+    }
+
+    .products .single-product .part-1 ul {
+        bottom: -41px;
+        left: 15px;
+    }
+
+    .products .single-product .part-1 ul li a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .products .single-product .part-2 .product-title {
+        font-size: 1.2rem;
+    }
+
+    .products .single-product .part-2 h4 {
+        font-size: 1.2rem;
+    }
+
+    .products .single-product .part-2 .product-old-price {
+        padding: 0 6px;
+    }
 }
