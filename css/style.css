@@ -146,6 +146,14 @@ a.active {
 
 }
 
+.action-btn:hover {
+    color: #ffa423;
+    font-size: 2.2rem;
+    border-color: #ffa423;
+    background-color: #ffffff96;
+
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none;
