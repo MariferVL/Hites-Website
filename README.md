@@ -1,11 +1,37 @@
-# Hites E-commerce Test Project
+<p align="center">
+  <h1>Hites E-commerce Test Project </h1>
+  
+  <b>Author</b>
+  [María-Fernanda Villalobos](https://github.com/MariferVL) <br/>
+</p>
+<br/>
+    <br/>
+    <a href="https://github.com/MariferVL/Hites-Website" target="_blank"><strong>Docs Access »</strong></a>
+    <br/>
+     <a href="https://marifervl.github.io/Hites-Website/" target="_blank"><strong>Deployment Access »</strong></a>
+    <br/>
 
+  </p>
+</div>
+<br/>
+ <br/>
+ 
 ## Overview
 This project serves as a frontend test for a selection process, simulating the design and layout of a Chilean store's e-commerce website. It showcases my skills in HTML, CSS, and Bootstrap for creating a responsive and visually appealing interface.
 
 ## Disclaimer
 **This project is purely for demonstration purposes and does not represent an actual website or brand.**
+<p align="center">
+       </summary>
+    <br/>
+    <br/>
+    <a href="https://github.com/MariferVL/Outsy" target="_blank"><strong>Acceso a Documentos »</strong></a>
+    <br/>
+     <a href="https://outsy.web.app/" target="_blank"><strong>Acceso a Despliegue »</strong></a>
+    <br/>
 
+  </p>
+  
 ## Project
 
 ### Development Process
