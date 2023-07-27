@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="En Hites.com encuentras todos los productos y las mejores ofertas en un solo lugar. Sitio web de tienda departamental.">
+  <meta name="keywords" content="Hites, productos, ofertas, tienda, departamental">
+  <meta name="author" content="María-Fernanda Villalobos">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+
+  <!-- Page Title -->
+  <title>En Hites.com encuentras todos los productos y las mejores ofertas en un solo lugar</title>
+
+  <!-- Bootstrap Styles -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-TpEkliTtBDC1/mENjXWn2k9Ehh3m9+L12g1vZ4QOe3fxI5VZVdG0G+Tq3jZu5KL9" crossorigin="anonymous">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logo" src="images\hitesLogo.png" alt="Logo Hites">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Botón de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="icons-mobile">
+          <button class="icon-btn" type="button" aria-label="Login"><i class="fas fa-user"></i>
+          </button>
+          <button class="icon-btn" type="button" aria-label="Bolsa de Compra"><i class="fas fa-shopping-bag"></i>
+          </button>
+          <button class="icon-btn" type="button" aria-label="Contactos"><i class="fas fa-headset"></i></button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link user" href="#">Mi Cuenta</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.hites.com/tecnologia/">Tecnología</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/electro-hogar/">Electro Hogar</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/celulares/">Celulares</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/dormitorio.html">Dormitorio</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/muebles/">Muebles</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/hogar/">Hogar</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/mujer/">Mujer</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/hombre/">Hombre</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/belleza/">Belleza</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/zapatos/">Zapatos</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/zapatillas/">Zapatillas</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/deportes/">Deportes</a></li>
+                <li><a class="dropdown-item" href="https://www.hites.com/mundo-infantil.html">Niños y Juguetería</a>
+                </li>
+                <li><a class="dropdown-item" href="https://www.hites.com/bebes-1/">Bebés</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item outlet" href="https://www.hites.com/outlet/">Outlet</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Encuentra lo que necesitas"
+              aria-label="Buscador">
+            <button class="btn btn-outline-success search" type="submit">Búsqueda</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="carousel">
+      <div id="carouselTop" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselTop" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselTop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselTop" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images\3Vestuario.png" class="d-block w-100"
+              alt="Modelos alzando brazos posando ropa invierno femenina.">
+          </div>
+          <div class="carousel-item">
+            <img src="images\2Panorámica.png" class="d-block w-100"
+              alt="Modelos posando con ropa femenina con paisaje de fondo">
+          </div>
+          <div class="carousel-item">
+            <img src="images\1Botas.png" class="d-block w-100" alt="Pares de botas de invierno">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTop" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTop" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="header">
+              <h2>Productos Favs</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Single Product -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-1" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                  <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Parka Corta Regular Mujer Rolly Go</h3>
+                <h4 class="product-old-price">$59.990</h4>
+                <h4 class="product-price">$12.990</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Single Product -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-2" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                  <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Parka Corta Regular Cuello Alto Mujer Rolly Go</h3>
+                <h4 class="product-price">$12.990</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Single Product -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-3" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                  <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Parka Corta Regular Rolly Go</h3>
+                <h4 class="product-old-price">$59.990</h4>
+                <h4 class="product-price">$12.990</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Single Product -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-4" class="single-product">
+              <div class="part-1">
+                <span class="new">nuevo</span>
+                <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                  <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Parka Corta Mujer Rolly Go</h3>
+                <h4 class="product-price">$12.990</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Single Product -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-1" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                  <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Parka Corta Rolly Go</h3>
+                <h4 class="product-old-price">$59.990</h4>
+                <h4 class="product-price">$12.990</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Single Product -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-2" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                  <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Parka Corta Regular Cuello Alto Mujer Rolly Go</h3>
+                <h4 class="product-price">$12.990</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Single Product -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-3" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                  <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Parka Corta Mujer Rolly Go</h3>
+                <h4 class="product-old-price">$59.990</h4>
+                <h4 class="product-price">$12.990</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Single Product -->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-4" class="single-product">
+              <div class="part-1">
+                <span class="new">nuevo</span>
+                <ul>
+                  <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-plus"></i></a></li>
+                  <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">Parka Cuello Alto Mujer Rolly Go</h3>
+                <h4 class="product-price">$12.990</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="access clearfix">
+      <ul class="clearfix container">
+        <li><a href="tel:6005505000"> Venta telefónica<strong> 600 550 5000</strong></a></li>
+        <li><a href="tel:6005506000"> Servicio al cliente<strong> 600 550 6000</strong></a></li>
+        <li>
+          <a id="" href="https://www.hites.com/seguimiento-de-casos" title="Sigue tus casos">Sigue tus
+            casos</a>
+        </li>
+        <li>
+          <a id="" href="https://www.hites.com/servicio-al-cliente-articles/contactanos.html"
+            title="Contáctanos">Contáctanos</a>
+        </li>
+        <li>
+          <a id="" href="https://www.tarjetahites.com/web/portal-financiero" title="Tarjeta Hites" target="_blank"
+            rel="noopener"><img alt="Tarjeta Hites"
+              src="https://www.hites.com/on/demandware.static/-/Library-Sites-HITESSharedLibrary/default/dwb5613531/images/homepage/home-test/hitescard-icon.svg"
+              height="14"> Tarjeta Hites</a>
+        </li>
+        <li>
+          <a id="" href="https://pagofacil.hites.com/" title="Pagar Tarjeta Hites" target="_blank" rel="noopener"><img
+              alt="Pagar Tarjeta Hites"
+              src="https://www.hites.com/on/demandware.static/-/Library-Sites-HITESSharedLibrary/default/dwb5613531/images/homepage/home-test/hitescard-icon.svg"
+              height="14"> Pagar Tarjeta Hites</a>
+        </li>
+        <li>
+          <a id="" href="https://www.hites.com/nuestras-tiendas" title="Tiendas"><img alt="Tiendas"
+              src="https://www.hites.com/on/demandware.static/-/Library-Sites-HITESSharedLibrary/default/dweaa3ce21/images/homepage/home-test/maps-icon.svg"
+              height="18"> Tiendas y Puntos de retiro</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
