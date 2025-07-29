@@ -57,10 +57,6 @@ nav {
     border-color: rgba(255, 255, 255, 1);
 }
 
-.icons-mobile {
-    padding-left: 0.8rem;
-
-}
 
 .icon-btn {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -405,12 +401,6 @@ footer {
         padding-right: 4rem;
     }
 
-    .navbar-nav {
-        margin-right: 3rem;
-        position: relative;
-        right: 36rem;
-    }
-
     .nav-link.user {
         display: none;
     }
@@ -419,10 +409,6 @@ footer {
         padding-right: 2rem;
         padding-left: 2rem;
         color: #fff !important;
-    }
-
-    .navbar-collapse {
-        justify-content: flex-end;
     }
 
     .nav-link.active {
